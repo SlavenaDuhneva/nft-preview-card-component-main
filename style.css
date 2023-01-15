@@ -1,0 +1,234 @@
+:root {
+--clr--primary-soft: hwb(215 55% 15%);
+--clr--primary-cyan: hsl(178, 100%, 50%);
+
+--clr--natural-white: hsl(0, 0%, 100%);
+--clr--natural--blue-main: hsl(217, 54%, 11%);
+--clr--natural--blue-card: hsl(216, 50%, 16%);
+--clr-natural--blue-line: hsl(215, 32%, 27%);
+--clr-natural--blue-main1: hsl(217, 58%, 12%);
+--clr-natural--transperan: hsl(178, 100%, 50%, 77%);
+
+
+
+
+--FF--: 'Outfit', sans-serif;
+--fw--regular: 400;
+--fw--bold: 600;
+--fw--light: 300;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    border-radius: 0.65rem;
+    margin: auto;
+  }
+  
+  .cube-image {
+    position: relative;
+  }
+  .cube-image div {
+    position: absolute;
+    background-color: var(--clr-natural--transperan);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    opacity: 0;
+  }
+  .cube-image div:hover {
+    opacity: 1;
+    cursor: pointer;
+
+
+  }
+  .cube-image div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+
+   
+   
+  
+  
+
+  
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+    color: var(--clr--primary-soft);
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+body {
+    font-family: var(--FF--);
+    font-size: 0.8888rem;
+    background-color: var(--clr-natural--blue-main1);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+  }  
+
+hr {
+  display: inline-flex;
+  position: relative;
+  left: 0.3rem;
+  width: 17rem;
+  border-style: solid none none none;
+  color: var(--clr-natural--blue-line);
+  padding-bottom: 0.9rem;
+  align-items: center;
+  place-content: center;
+}
+
+span {
+  color: var(--clr--natural-white);
+}
+
+span:hover {
+  cursor: pointer;
+  color: var(--clr--primary-cyan);
+  
+  
+}
+
+table {
+margin-bottom: 0.5rem;
+display: block;
+}
+.product__content {
+    background-color: var(--clr--natural--blue-card); ;
+    padding: 1.3rem 1.3rem 0 1.3rem;
+    border-radius: 0.9rem;
+    display:block;
+    max-width: 320px;
+    margin: 2rem;
+
+}
+
+h1 {
+    font-family: var(--FF--) ;
+    font-weight: var(--fw--bold);
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    color: var(--clr--natural-white);
+  }
+h1:hover {
+  color: var(--clr--primary-cyan);
+  cursor: pointer;
+}   
+
+p {
+    font-family: var(--FF--);
+    font-weight: var(--fw--light);
+    padding-left: 0.8rem;
+    padding-bottom: 0.8rem;
+
+
+}
+.clock {
+  color: var(--clr--primary-soft);
+}
+
+
+.padding-oreant {
+  padding-left: 0.5rem;
+}
+  
+.padding {
+  padding-right: 5.6rem;
+  color: var(--clr--primary-cyan); 
+}
+.avatar {
+  display: block;
+  margin: 0;
+  border-radius: 100%;
+  border: 0.08rem solid white; 
+  place-content: center;  
+
+
+}
+.creation {
+padding-top: 1rem;
+padding-right: 1rem;
+justify-content: right;
+}
+.creator {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  bottom: 1.2rem;
+  left: 0.4rem;
+}
+
+.attribution {
+  color: white;
+}
+
+
+@media (min-width: 500px) {
+  .container {
+  width: 450px;
+  margin: 0 auto 1rem;
+}
+}
+
+
+
+  
+
+
